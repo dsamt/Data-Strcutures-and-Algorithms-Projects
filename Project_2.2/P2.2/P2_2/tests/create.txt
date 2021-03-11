@@ -1,0 +1,49 @@
+NOTE: set your text editor to use a fixed width font (e.g., Courier) to aid in viewing this file.
+
+Reference for parameterized constructor/create if you don't randomize neighbors selected and instead follow the neighbor visitation order (top, bottom, left, right) from cell 0.
+
+Maze m;
+m.create(10,60,0,8)
+
+Before removing walls (B and E not placed for clarity):
+
+ # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+############################################################
+ # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+############################################################
+ # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+############################################################
+ # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+############################################################
+ # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+############################################################
+
+The spaces represent the neighbors of cell 0 and their neighbors; `#' are walls; each cell is surrounded by four walls
+
+After removing walls (B and E not placed for clarity):
+  
+.#.x.#.x.#.x.#.x.#.x.#.x.#.x.#.x.#.x.#.x.#.x.#.x.#.x.#.x.#.#
+x#x#x#x#x#x#x#x#x#x#x#x#x#x#x#x#x#x#x#x#x#x#x#x#x#x#x#x#x#x#
+.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#
+x#x#x#x#x#x#x#x#x#x#x#x#x#x#x#x#x#x#x#x#x#x#x#x#x#x#x#x#x#x#
+.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#
+x#x#x#x#x#x#x#x#x#x#x#x#x#x#x#x#x#x#x#x#x#x#x#x#x#x#x#x#x#x#
+.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#
+x#x#x#x#x#x#x#x#x#x#x#x#x#x#x#x#x#x#x#x#x#x#x#x#x#x#x#x#x#x#
+.x.#.x.#.x.#.x.#.x.#.x.#.x.#.x.#.x.#.x.#.x.#.x.#.x.#.x.#.x.#
+############################################################
+
+where `.' represents the cells that were visited and `x' the walls that were taken down
+
+The final maze would look like (B and E not placed for clarity):
+
+ #   #   #   #   #   #   #   #   #   #   #   #   #   #   # #
+ # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+ # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+ # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+ # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+ # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+ # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+ # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+   #   #   #   #   #   #   #   #   #   #   #   #   #   #   #
+############################################################

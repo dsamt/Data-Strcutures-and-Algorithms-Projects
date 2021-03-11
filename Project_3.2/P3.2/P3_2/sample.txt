@@ -1,0 +1,8 @@
+num 3
+boxes 12 12 6
+mboxes 20
+mdist 10
+dist
+4
+4 5.66
+2.83 6.32 2.83
